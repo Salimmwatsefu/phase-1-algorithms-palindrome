@@ -1,9 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const len = word.length
+  for(let i=0; i < len/2; i++)
+  if (word[0] === word[len-1-i]) {
+    return true
+  }else{
+    return false
+  }
+
 }
 
 /* 
   Add your pseudocode here
+  1.find the word length
+  2.loop through half of the string
 */
 
 /*
